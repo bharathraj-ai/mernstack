@@ -1,0 +1,140 @@
+/* ===== Premium Exam Result Breakdown ===== */
+.result-details-row td {
+    background-color: #f8fafc;
+    padding: 2rem !important;
+}
+
+.result-breakdown h4 {
+    margin-bottom: 1.5rem;
+    color: #0f172a;
+    font-size: 1.25rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.result-breakdown h4::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 24px;
+    background: var(--primary-color);
+    border-radius: 2px;
+}
+
+.breakdown-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.breakdown-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+}
+
+.breakdown-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-color: #cbd5e1;
+}
+
+.breakdown-question {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.breakdown-question strong {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+.breakdown-answer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #f1f5f9;
+}
+
+.correct-tag,
+.wrong-tag {
+    padding: 0.35rem 0.85rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.correct-tag {
+    background-color: #dcfce7;
+    color: #15803d;
+    border: 1px solid #bbf7d0;
+}
+
+.correct-tag::before {
+    content: '✓';
+    font-weight: 900;
+}
+
+.wrong-tag {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+}
+
+.wrong-tag::before {
+    content: '✕';
+    font-weight: 900;
+}
+
+.answer-comparison {
+    display: flex;
+    gap: 2rem;
+    flex: 1;
+}
+
+.breakdown-answer p {
+    margin: 0;
+    color: #64748b;
+    font-size: 0.9rem;
+    background: #f8fafc;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.text-green {
+    color: #16a34a;
+    font-weight: 700;
+}
+
+.text-red {
+    color: #dc2626;
+    font-weight: 700;
+    text-decoration: line-through;
+    margin-right: 0.5rem;
+}
+
+.correct-answer-text {
+    border-color: #bbf7d0 !important;
+    background-color: #f0fdf4 !important;
+}
+
+/* Specific styling for the row text to match table/card */
+.result-details-row td {
+    color: var(--text-primary);
+}

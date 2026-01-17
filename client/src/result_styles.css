@@ -1,0 +1,76 @@
+/* ===== Exam Result Breakdown ===== */
+.result-details-row {
+    background-color: #f9fafb;
+}
+
+.result-breakdown {
+    padding: 1.5rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.result-breakdown h4 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.breakdown-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.breakdown-item {
+    background: white;
+    padding: 1rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
+    margin-bottom: 0.5rem;
+}
+
+.breakdown-question {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.breakdown-answer {
+    font-size: 0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.correct-tag,
+.wrong-tag {
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.correct-tag {
+    background-color: var(--success-light);
+    color: var(--success-color);
+}
+
+.wrong-tag {
+    background-color: var(--danger-light);
+    color: var(--danger-color);
+}
+
+.text-green {
+    color: var(--success-color);
+    font-weight: 600;
+}
+
+.text-red {
+    color: var(--danger-color);
+    font-weight: 600;
+}
+
+.correct-answer-text {
+    margin-left: auto;
+    font-style: italic;
+}

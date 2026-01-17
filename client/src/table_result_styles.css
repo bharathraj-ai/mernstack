@@ -1,0 +1,67 @@
+/* ===== Breakdown Table Styles ===== */
+.breakdown-table-container {
+    overflow-x: auto;
+    margin-top: 1rem;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.breakdown-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.breakdown-table th {
+    background-color: #f1f5f9;
+    text-align: left;
+    padding: 1rem;
+    font-weight: 600;
+    color: #475569;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.breakdown-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #f1f5f9;
+    vertical-align: middle;
+}
+
+.breakdown-table tr:last-child td {
+    border-bottom: none;
+}
+
+.question-text-cell {
+    font-weight: 500;
+    color: #1e293b;
+    min-width: 250px;
+}
+
+/* Row states */
+.row-wrong {
+    background-color: #fff1f2;
+}
+
+.row-correct {
+    background-color: #ffffff;
+}
+
+/* Bold Green for Correct Answer Column */
+.text-green-bold {
+    color: #15803d;
+    font-weight: 700;
+    background-color: #dcfce7;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+
+/* Override existing text-red/green for table context if needed */
+.text-red {
+    color: #dc2626;
+    font-weight: 600;
+}
+
+.text-green {
+    color: #16a34a;
+    font-weight: 600;
+}
