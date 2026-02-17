@@ -19,6 +19,9 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
+googleProvider.setCustomParameters({
+    client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID
+});
 
 // Admin email that is allowed
 const ADMIN_EMAIL = "bharathraj95317@gmail.com";
